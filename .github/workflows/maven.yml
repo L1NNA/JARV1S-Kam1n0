@@ -1,0 +1,32 @@
+name: Kam1n0 Packaging
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        repository: McGill-DMaS/Kam1n0
+        token: ${{ secrets.kam1n0 }}
+    - name: Set up JDK 1.8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 1.8
+    - name: Build with Maven
+      run: \
+        mvn package -DskipTests
+        tar -zcvf kam1n0-bins.tar.gz build-bins
+      working-directory: kam1n0
+    - name: Upload to release
+      uses: L1NNA/github-release@master
+      with:
+        tag: v0.0.1
+        files: kam1n0/kam1n0-bins.tar.gz
+        gzip: false
+        body: latest jar built
+        token: ${{ secrets.GITHUB_TOKEN }}
+        allow_override: true
