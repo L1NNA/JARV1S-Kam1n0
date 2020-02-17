@@ -19,13 +19,13 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run:
-        mvn package -DskipTests && ls -alh && pwd
+        mvn package -DskipTests 
       working-directory: /home/runner/work/JARV1S-Kam1n0/Kam1n0/kam1n0/
     - name: Upload to release
       uses: L1NNA/github-release@master
       with:
         tag: v0.0.1
-        files: build-bins:../kam1n0/build-bins
+        files: build-bins
         gzip: true
         body: latest jar built
         token: ${{ secrets.GITHUB_TOKEN }}
