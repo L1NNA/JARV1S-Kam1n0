@@ -12,18 +12,18 @@ if path.exists(readme):
 
 
 setup(
-    name='ghidrapy',
-    packages=['ghidrapy'],
-    version='0.0.6',
+    name='kam1n0',
+    packages=['kam1n0'],
+    version='0.0.1',
     license='Apache 2.0',
-    description='Ghidra disassembler through python. Output formatted for Kam1n0 and JARV1S.',
+    description='Python wrapper for Kam1n0 batch mode.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Steven Ding',
     author_email='ding@cs.queensu.ca',
-    url='https://github.com/L1NNA/JARV1S-Ghidra',
-    download_url='https://github.com/L1NNA/JARV1S-Ghidra/archive/v0.0.1.tar.gz',
-    keywords=['Disassembler', 'Ghidra'],
+    url='https://github.com/L1NNA/JARV1S-Kam1n0',
+    download_url='https://github.com/L1NNA/JARV1S-Kam1n0',
+    keywords=['Kam1n0', 'Binary Analysis'],
     install_requires=[
         'requests',
         'tqdm',
