@@ -19,7 +19,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: |
-        mvn package -DskipTests && tar -zcvf kam1n0-bins.tar.gz build-bins
+        mvn package -DskipTests
       working-directory: kam1n0
     - name: Upload to release
       uses: L1NNA/github-release@master
