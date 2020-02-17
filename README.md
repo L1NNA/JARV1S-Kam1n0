@@ -26,3 +26,5 @@ optional arguments:
 ```
 git+https://github.com/L1NNA/JARV1S-Kam1n0@master
 ```
+### :star: Contributors:
+- Steven Ding - Queen's Computing
