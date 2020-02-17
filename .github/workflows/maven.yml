@@ -21,8 +21,7 @@ jobs:
       run: |
         which mvn
         pwd
-        mvn compile
-      working-directory: kam1n0
+        dir
     - name: Build with Maven
       run:
         mvn package -DskipTests
