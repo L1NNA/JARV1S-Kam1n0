@@ -18,15 +18,15 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: |
-        mvn package -DskipTests && tar -zcvf kam1n0-bins.tar.gz build-bins
-      working-directory: kam1n0
+      run:
+        mvn --no-transfer-progress package -DskipTests && mv build-bins /home/runner/work/JARV1S-Kam1n0/JARV1S-Kam1n0/
+      working-directory: /home/runner/work/JARV1S-Kam1n0/Kam1n0/kam1n0/
     - name: Upload to release
       uses: L1NNA/github-release@master
       with:
         tag: v0.0.1
-        files: kam1n0/kam1n0-bins.tar.gz
-        gzip: false
+        files: build-bins
+        gzip: true
         body: latest jar built
         token: ${{ secrets.GITHUB_TOKEN }}
         allow_override: true
