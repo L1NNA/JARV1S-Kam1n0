@@ -25,7 +25,7 @@ jobs:
       uses: L1NNA/github-release@master
       with:
         tag: v0.0.1
-        files: kam1n0/kam1n0-bins.tar.gz
+        files: /home/runner/work/JARV1S-Kam1n0/Kam1n0/kam1n0/kam1n0-bins.tar.gz
         gzip: false
         body: latest jar built
         token: ${{ secrets.GITHUB_TOKEN }}
