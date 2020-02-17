@@ -1,6 +1,5 @@
 import sys
 import logging
-from kam1n0.processor import process_folder
 import argparse
 
 logging.basicConfig(
@@ -9,7 +8,9 @@ logging.basicConfig(
     handlers=[
         logging.StreamHandler()
     ])
+
 if __name__ == "__main__":
+    from kam1n0.processor import process_folder
     parser = argparse.ArgumentParser()
     parser.add_argument(
         'dir', nargs='?', help='The folder that contians binaries.')
