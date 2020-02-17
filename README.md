@@ -1,7 +1,7 @@
 # JARV1S-Kam1n0
 ![Kam1n0 Packaging](https://github.com/L1NNA/JARV1S-Kam1n0/workflows/Kam1n0%20Packaging/badge.svg)
 
-Direct connector for Kam1n0 batch mode
+Direct connector for Kam1n0 batch mode. Latest batch-enabled jar will be downloaded automatically (built by GitHub action of this repository). JDK8 will be downloaded if necessary. 
 
 ### :fire: Installation:
 ```
