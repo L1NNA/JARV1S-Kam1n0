@@ -18,7 +18,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: \
+      run: |
         mvn package -DskipTests
         tar -zcvf kam1n0-bins.tar.gz build-bins
       working-directory: kam1n0
