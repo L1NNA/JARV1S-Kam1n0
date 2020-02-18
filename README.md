@@ -26,5 +26,13 @@ optional arguments:
 ```
 git+https://github.com/L1NNA/JARV1S-Kam1n0@master
 ```
+
+### 📖 Current Commit Tag of the Distribution
+This is used to track which version is built in GitHub Action and used to trigger the build.
+```
+commit 6eff14087ac3c888dd52971b6d6feb276bbdaaa4
+```
+
 ### :star: Contributors:
 - Steven Ding - Queen's Computing
+- Miles Li - McGill University
