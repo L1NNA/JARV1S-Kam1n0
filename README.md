@@ -1,5 +1,5 @@
 # JARV1S-Kam1n0
-![Kam1n0 Packaging](https://github.com/L1NNA/JARV1S-Kam1n0/workflows/Kam1n0%20Packaging/badge.svg)
+[![Kam1n0 Packaging](https://github.com/L1NNA/JARV1S-Kam1n0/workflows/Kam1n0%20Packaging/badge.svg)](https://github.com/L1NNA/JARV1S-Kam1n0/actions)
 
 Direct connector for Kam1n0 batch mode. Latest batch-enabled jar will be downloaded automatically (built by GitHub action of this repository). JDK8 will be downloaded if necessary. 
 
@@ -30,7 +30,7 @@ git+https://github.com/L1NNA/JARV1S-Kam1n0@master
 ### 📖 Current Commit Tag of the Distribution
 This is used to track which version is built in GitHub Action and used to trigger the build.
 ```
-commit 07b05e2c96b44681a1e6aaf138d772464f47679f
+commit db286a6e86e53afd9db765fb0a42bfdda73f66d2
 ```
 
 ### :star: Contributors:
