@@ -30,7 +30,7 @@ git+https://github.com/L1NNA/JARV1S-Kam1n0@master
 ### 📖 Current Commit Tag of the Distribution
 This is used to track which version is built in GitHub Action and used to trigger the build.
 ```
-commit db286a6e86e53afd9db765fb0a42bfdda73f66d2 - retrial
+commit b087396b54ca0f5654010e30e800892a72b87787
 ```
 
 ### :star: Contributors:
